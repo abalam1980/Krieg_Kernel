@@ -2423,6 +2423,7 @@ static inline void task_tli_init(struct task_struct *cur)
 int do_stune_boost(char *st_name, int boost, int *slot);
 int do_stune_sched_boost(char *st_name, int *slot);
 int reset_stune_boost(char *st_name, int slot);
+int set_stune_boost(char *st_name, int boost, int *boost_default);
 #else /* !CONFIG_DYNAMIC_STUNE_BOOST */
 static inline int do_stune_boost(char *st_name, int boost, int *slot)
 {
@@ -2435,6 +2436,11 @@ static inline int do_stune_sched_boost(char *st_name, int *slot)
 }
 
 static inline int reset_stune_boost(char *st_name, int slot)
+{
+	return 0;
+}
+
+static inline int set_stune_boost(char *st_name, int boost, int *boost_default)
 {
 	return 0;
 }
