@@ -182,7 +182,7 @@
 					15 01 00 00 00 00 02 B5 13					/* ELVSS DIM OFF */
 					15 01 00 00 00 00 02 53 28
 					39 01 00 00 00 00 03 F0 A5 A5
-					/* 60hz â†?120hz Transition */
+					/* 60hz ï¿½?120hz Transition */
 					39 01 00 00 00 00 03 F0 5A 5A
 					15 01 00 00 00 00 02 60 02					/* 60HZ */
 					15 01 00 00 00 00 02 F7 0F
@@ -503,6 +503,8 @@
 				qcom,mdss-dsc-bit-per-component = <8>;
 				qcom,mdss-dsc-bit-per-pixel = <8>;
 				qcom,mdss-dsc-block-prediction-enable;
+				qcom,partial-update-enabled = "single_roi";
+				qcom,panel-roi-alignment = <540 30 540 30 540 30>;
 			};
 
 			timing@1 {
@@ -615,7 +617,7 @@
 					15 01 00 00 00 00 02 B5 13					/* ELVSS DIM OFF */
 					15 01 00 00 00 00 02 53 28
 					39 01 00 00 00 00 03 F0 A5 A5
-					/* 60hz â†?120hz Transition */
+					/* 60hz ï¿½?120hz Transition */
 					39 01 00 00 00 00 03 F0 5A 5A
 					15 01 00 00 00 00 02 60 22					/* 120HZ */
 					15 01 00 00 00 00 02 F7 0F
@@ -940,6 +942,8 @@
 				qcom,mdss-dsc-bit-per-component = <8>;
 				qcom,mdss-dsc-bit-per-pixel = <8>;
 				qcom,mdss-dsc-block-prediction-enable;
+				qcom,partial-update-enabled = "single_roi";
+				qcom,panel-roi-alignment = <540 30 540 30 540 30>;
 			};
 
 			timing@2 {
@@ -1049,7 +1053,7 @@
 					15 01 00 00 00 00 02 B5 13					/* ELVSS DIM OFF */
 					15 01 00 00 00 00 02 53 28
 					39 01 00 00 00 00 03 F0 A5 A5
-					/* 60hz â†?120hz Transition */
+					/* 60hz ï¿½?120hz Transition */
 					39 01 00 00 00 00 03 F0 5A 5A
 					15 01 00 00 00 00 02 60 20					/* 120HZ */
 					15 01 00 00 00 00 02 F7 0F
@@ -1370,6 +1374,8 @@
 				qcom,mdss-dsc-bit-per-component = <10>;
 				qcom,mdss-dsc-bit-per-pixel = <8>;
 				qcom,mdss-dsc-block-prediction-enable;
+				qcom,partial-update-enabled = "single_roi";
+				qcom,panel-roi-alignment = <720 40 720 40 720 40>;
 			};
 
 			timing@3 {
@@ -1479,7 +1485,7 @@
 					15 01 00 00 00 00 02 B5 13					/* ELVSS DIM OFF */
 					15 01 00 00 00 00 02 53 28
 					39 01 00 00 00 00 03 F0 A5 A5
-					/* 60hz â†?120hz Transition */
+					/* 60hz ï¿½?120hz Transition */
 					39 01 00 00 00 00 03 F0 5A 5A
 					15 01 00 00 00 00 02 60 00					/*60HZ*/
 					15 01 00 00 00 00 02 F7 0F
@@ -1799,6 +1805,9 @@
 				qcom,mdss-dsc-bit-per-component = <10>;
 				qcom,mdss-dsc-bit-per-pixel = <10>;
 				qcom,mdss-dsc-block-prediction-enable;
+				qcom,partial-update-enabled = "single_roi";
+				qcom,panel-roi-alignment = <720 40 720 40 720 40>;
+
 			};
 		};
 	};
