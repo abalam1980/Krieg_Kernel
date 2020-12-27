@@ -3886,7 +3886,7 @@ static ssize_t aw8697_rtp_store(struct device *dev, struct device_attribute *att
         pr_debug("%s: kstrtouint fail\n", __FUNCTION__);
         return rc;
     }
-    pr_info("%s: rtp[%d]\n", __FUNCTION__,val);
+    pr_debug("%s: rtp[%d]\n", __FUNCTION__,val);
 
     /*OP add for juge rtp on begin*/
     rtp_is_going_on = aw8697_haptic_juge_RTP_is_going_on(aw8697);
