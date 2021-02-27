@@ -22,7 +22,7 @@
 #include <linux/oem/control_center.h>
 #endif
 
-static int touchboost = 0;
+static int touchboost = 1;
 
 /*
  * Sched will provide the data for every 20ms window,
